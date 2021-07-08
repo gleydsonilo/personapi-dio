@@ -17,7 +17,7 @@ import java.util.List;
 @AllArgsConstructor(onConstructor = @__(@Autowired))
 public class PersonController {
 
-    private PersonService personService; // Dependency injection
+    private final PersonService personService; // Dependency injection
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
